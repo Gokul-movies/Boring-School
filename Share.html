@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+  <button id='shareBtn'>share</button>
+  <script> 
+
+        document.querySelector('#shareBtn') 
+
+        .addEventListener('click', event => { 
+
+  
+
+            // Fallback, Tries to use API only 
+
+            // if navigator.share function is 
+
+            // available 
+
+            if (navigator.share) { 
+
+                navigator.share({ 
+
+  
+
+                    // Title that occurs over 
+
+                    // web share dialog 
+
+                    title: 'WeShare', 
+
+  
+
+                    // URL to share 
+
+                    url: 'http://0.0.0.0:5551/v.php?q=$test_v&id=$acc' 
+
+                }).then(() => { 
+
+                    console.log('Thanks for sharing!'); 
+
+                }).catch(err => { 
+
+  
+
+                    // Handle errors, if occured 
+
+                    console.log( 
+
+                    'Error while using Web share API:'); 
+
+                    console.log(err); 
+
+                }); 
+
+            } else { 
+
+  
+
+                // Alerts user if API not available  
+
+                alert('Browser doesnt support this API !'); 
+
+            } 
+
+        }) 
+
+    </script>
+</body>
+
+</html>

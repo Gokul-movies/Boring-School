@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 10px;
+}
+.frame{
+    background-color: rgba(243, 241, 240, 0.658);
+    width: 110%;
+    height: 200px;
+    color: black;
+    position: absolute;
+    top: 0px;
+}
+.topic{
+    position: absolute;
+    left: 50px;
+    font-weight: 900;
+    top: 50px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500&display=swap');
+.back{
+    width: 110%;
+    height: 200px;
+    opacity: 0.4;
+}
+.python{
+    /*position: absolute;*/
+    border-radius: 5px;
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 260px;
+    border: 1px solid black;
+    width: 100px;
+}
+.hed{
+    color: black;
+    position: absolute;
+    left: 70px;
+    font-family: 'Anton', sans-serif;
+    top: 330px;
+    font-size: 20px;
+}
+.html{
+    left: 270px;
+}
+.menu{
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+.detail{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+.all{
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 180px;
+    border-radius: 5px;
+    height: 100px;
+}
+.con{
+    display: inline-flex;
+}
+.js{
+    position: absolute;
+    left: 0px;
+    margin-top: 150px;
+}
+.javas{
+    top: 470px;
+    left: 30px;
+}
+.rela{
+
+  margin-left: 100px;
+
+}
